@@ -21,7 +21,7 @@ window.onload = function () {
         shoplist_ar.push(obg)
         localStorage.setItem(obg.name, obg.opject )
         x.push(localStorage.getItem(`${obg.name}`))
-        document.querySelector("#chek").innerHTML = x
+        // document.querySelector("#chek").innerHTML = x
         document.querySelector('#id_h1').value = ""
         document.querySelector('#id_h2').value = ""
         createProducsts()
@@ -63,10 +63,10 @@ function createProducsts() {
         mybtn.innerHTML = 'delete';
         id_row2.appendChild(mybtn);
         mybtn.onclick = function () { del() }
-        let mybtn2 = document.createElement("button");
-        mybtn2.innerHTML = 'marcer';
-        id_row2.appendChild(mybtn2);
-        mybtn2.addEventListener("click", function () { alert("אנא אשר כניסה") })
+        // let mybtn2 = document.createElement("button");
+        // mybtn2.innerHTML = 'marcer';
+        // id_row2.appendChild(mybtn2);
+        // mybtn2.addEventListener("click", function () { alert("אנא אשר כניסה") })
     }
     
 }
